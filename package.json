@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test task for libbler",
+  "main": "index.js",
+  "keywords": [
+    "test",
+    "job"
+  ],
+  "author": "Ivan Rozhkov",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/node": "^11.10.4",
+    "ts-mocha": "^6.0.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/expect": "^1.20.4",
+    "@types/mocha": "^5.2.6",
+    "expect": "^24.1.0",
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "test": "find ./src -name '*.spec.ts' | xargs ts-mocha -R spec",
+    "dev": "ts-node ./src/index.ts"
+  }
+}
